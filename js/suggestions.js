@@ -1,0 +1,22 @@
+let suggestions = [
+    "Spiderman",
+    "Titanic",
+    "Tronman",
+    "Java",
+    "Harry Potter",
+    "Avengers",
+    "Endgame",
+    "Dare Devil",
+    "Marvel",
+    "1080p",
+    "Sardar Udham 2021",
+    "Lupt 2018",
+    "lupt",
+    "Captain America",
+    "Mission impossible",
+    "James Bond",
+    "Kingsmen",
+    "Games",
+    ".exe",
+    "Python"
+];
