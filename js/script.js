@@ -12,7 +12,7 @@ inputBox.onkeyup = (e)=>{
     let emptyArray = [];
     if(userData){
         icon.onclick = ()=>{
-            webLink = `https://files.parrotprivate.ml/0:search?q=${userData}`;
+            webLink = `https://dl.parrotprivate.ml/0:search?q=${userData}`;
             linkTag.setAttribute("href", webLink);
             linkTag.click();
         }
@@ -40,7 +40,7 @@ function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
     icon.onclick = ()=>{
-        webLink = `https://files.parrotprivate.ml/0:search?q=${selectData}`;
+        webLink = `https://dl.parrotprivate.ml/0:search?q=${selectData}`;
         linkTag.setAttribute("href", webLink);
         linkTag.click();
     }
