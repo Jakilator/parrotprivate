@@ -1,116 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body{
-/*  background: #da680f;*/
+*
+body {
   background-image: url("img/Textures.png");
   padding: 0 20px;
+  
+}
+::placeholder {
+  color: rgb(18, 2, 2);
+  opacity: 0.7; 
 }
 
-::selection{
-  color: #fff;
-  background: #664AFF;
+svg {
+  color: #751e73;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
 }
 
-.wrapper{
-  max-width: 450px;
-  margin: 150px auto;
-}
-
-.wrapper .search-input{
-  background: #fff;
-  width: 100%;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
-}
-
-.search-input input{
-  height: 55px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 0 60px 0 20px;
-  font-size: 18px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
-}
-
-.search-input.active input{
-  border-radius: 5px 5px 0 0;
-}
-
-.search-input .autocom-box{
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  max-height: 280px;
-  overflow-y: auto;
-}
-
-.search-input.active .autocom-box{
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.autocom-box li{
-  list-style: none;
-  padding: 8px 12px;
-  display: none;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
-}
-
-.search-input.active .autocom-box li{
-  display: block;
-}
-.autocom-box li:hover{
-  background: #efefef;
-}
-
-.search-input .icon{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  line-height: 55px;
-  font-size: 20px;
-  color: #644bff;
+button {
+  all: unset;
   cursor: pointer;
+  width: 44px;
+  height: 44px;
 }
-.btn-group button {
-  background-color: #da680fff; /* Green background */
-  color: blue; /* White text */
-  border-radius: 7%;
-  padding: 10px 27px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-  position:relative;
-margin-top:100%;
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+form {
+  background-color: #8bf5fb;
+  width: 85%;
+  height: 44px;
+  border-radius: 15px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  max-width: 450px;
+  margin: 10% auto;
+  padding: 6px 10px;
 }
 
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
- 
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #0775f5;
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 44px;
+  border-radius: 19px;
+  max-width: 450px;
+  margin: 10% auto;
+  position: relative;
+  padding: 6px 10px;
 }

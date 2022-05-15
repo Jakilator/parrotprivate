@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' class=''>
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
     <title>Parrot Ptivate Search</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
   </head>
   <body>
     <img class="Hed" src="img/20220127_182407.png" width ='100%'></img>
-    <div class="wrapper">
+    
       <div class="search-input">
-        <a href="" target="_blank" hidden></a>
-        <input type="search" placeholder="File/Movie Name Here.." aria-label="Search" value="" required="">
-        <div class="autocom-box">
-          <!-- here list are inserted from javascript -->
-        </div>
-        <div class="icon"><i class="fas fa-search"></i></div>
-      </div>
-    </div>
+    <form role="search" id="form">
+      <input type="search" id="query" name="q" placeholder="File and Movie name here..." aria-label="Search through site content">
+      <button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form></div>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const parrot = 'https://dl.parrotprivate.ml/0:search?q=';
+      const site = 'pagedart.comf';
 
-    <script src="js/script.js"></script>
+      function submitted(event) {
+        event.preventDefault();
+        const url = parrot + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
 
+      f.addEventListener('submit', submitted);
+    </script>
   </body>
 </html>
