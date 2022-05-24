@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Google Redirect</title>
+<script>
+    function pageRedirect() {
+        window.location.replace("https://www.google.com/");
+    }      
+    setTimeout("pageRedirect()", 10000);
+</script>
+</head>
+<body>
+    <p><strong>Note:</strong> You will be redirected to the <b>GOOGLE.COM</b> in 10 sec. You will not able to get back to this page by clicking the browser back button.</p>
+    <p> You will be redirected in <span id="countdowntimer">10 </span> Seconds <a href="https://www.google.com">click here</a> if not redirected</p>
+
+<script type="text/javascript">
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+</body>
+</html>
